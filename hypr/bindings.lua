@@ -1,15 +1,3 @@
--- Web app bindings.
-o.bind("SUPER + SHIFT + A", "ChatGPT", { webapp = "https://chatgpt.com" })
-o.bind("SUPER + SHIFT + ALT + A", "Grok", { webapp = "https://grok.com" })
-o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://app.hey.com/calendar/weeks/" })
-o.bind("SUPER + SHIFT + E", "Email", { webapp = "https://app.hey.com" })
-o.bind("SUPER + SHIFT + Y", "YouTube", { webapp = "https://youtube.com/" })
-o.bind("SUPER + SHIFT + ALT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
-o.bind("SUPER + SHIFT + CTRL + G", "Google Messages", { webapp = "https://messages.google.com/web/conversations", focus = true })
-o.bind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
-o.bind("SUPER + SHIFT + S", "Google Maps", { webapp = "https://maps.google.com/", focus = true })
-o.bind("SUPER + SHIFT + X", "Excalidraw", { webapp = "https://excalidraw.com/" })
-
 -- Override defaults: unbind key combos we're repurposing.
 hl.unbind("SUPER + SPACE")
 hl.unbind("SUPER + W")
@@ -26,6 +14,18 @@ hl.unbind("CTRL + ALT + DELETE")
 hl.unbind("SUPER + SHIFT + S")
 hl.unbind("SUPER + X")
 hl.unbind("SUPER + SHIFT + X")
+
+-- Web app bindings.
+o.bind("SUPER + SHIFT + A", "ChatGPT", { webapp = "https://chatgpt.com" })
+o.bind("SUPER + SHIFT + ALT + A", "Grok", { webapp = "https://grok.com" })
+o.bind("SUPER + SHIFT + C", "Calendar", { webapp = "https://app.hey.com/calendar/weeks/" })
+o.bind("SUPER + SHIFT + E", "Email", { webapp = "https://app.hey.com" })
+o.bind("SUPER + SHIFT + Y", "YouTube", { webapp = "https://youtube.com/" })
+o.bind("SUPER + SHIFT + ALT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
+o.bind("SUPER + SHIFT + CTRL + G", "Google Messages", { webapp = "https://messages.google.com/web/conversations", focus = true })
+o.bind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
+o.bind("SUPER + SHIFT + S", "Google Maps", { webapp = "https://maps.google.com/", focus = true })
+o.bind("SUPER + SHIFT + X", "Excalidraw", { webapp = "https://excalidraw.com/" })
 
 -- Menu / launcher.
 o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu")
