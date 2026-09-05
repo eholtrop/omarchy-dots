@@ -24,7 +24,6 @@ o.bind("SUPER + SHIFT + Y", "YouTube", { webapp = "https://youtube.com/" })
 o.bind("SUPER + SHIFT + ALT + G", "WhatsApp", { webapp = "https://web.whatsapp.com/", focus = true })
 o.bind("SUPER + SHIFT + CTRL + G", "Google Messages", { webapp = "https://messages.google.com/web/conversations", focus = true })
 o.bind("SUPER + SHIFT + P", "Google Photos", { webapp = "https://photos.google.com/", focus = true })
-o.bind("SUPER + SHIFT + S", "Google Maps", { webapp = "https://maps.google.com/", focus = true })
 o.bind("SUPER + SHIFT + X", "Excalidraw", { webapp = "https://excalidraw.com/" })
 
 -- Menu / launcher.
@@ -82,6 +81,6 @@ o.bind("CTRL + SUPER + ALT + DOWN", "Center window", hl.dsp.exec_cmd("centerwind
 o.bind("SUPER + SHIFT + S", "Screenshot to clipboard", "grim -g \"$(slurp)\" - | wl-copy")
 
 -- Push-to-talk (mouse:276 is a side button, e.g. Logitech MX Master).
-o.bind("mouse:276", "PTT unmute", "pactl set-source-mute PTT_Output 1")
-o.bind("mouse:276", "PTT mute", "pactl set-source-mute PTT_Output 0", { release = true })
-o.exec_on_start("pactl set-source-mute PTT_Output 0")
+-- o.bind("mouse:276", "PTT unmute", "pactl set-source-mute PTT_Output 1")
+-- o.bind("mouse:276", "PTT mute", "pactl set-source-mute PTT_Output 0", { release = true })
+-- o.exec_on_start("pactl set-source-mute PTT_Output 0")
