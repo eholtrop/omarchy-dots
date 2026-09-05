@@ -1,0 +1,17 @@
+
+" Center screen after searching or moving
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap gg ggzz
+
+" Me not giving up on Ctrl based things
+nnoremap <C-a> ggVG
+nnoremap <C-f> /
+
+nnoremap D p
+nnoremap <C-Up> <C-u>zz
+nnoremap <C-Down> <C-d>zz
+
+xnoremap p "_dP
