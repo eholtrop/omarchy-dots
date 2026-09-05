@@ -20,5 +20,5 @@ o.window({ title = "^(lazygit)$" }, { float = true, size = { "monitor_w * 0.6", 
 o.window("^(org.gnome.Nautilus)$", { float = true })
 o.window("^(screenkey)$", { float = true, size = { 800, 100 }, workspace = "6 silent" })
 
--- Force Excalidraw webapp to float.
-o.window("^(excalidraw)$", { float = true })
+-- Force Excalidraw webapp to float and center.
+o.window("^(chrome-excalidraw\\.com__-Default)$", { float = true, center = true, size = { "monitor_w * 0.8", "monitor_h * 0.8" } })
