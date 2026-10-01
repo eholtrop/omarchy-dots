@@ -73,9 +73,7 @@ o.bind("SUPER + ALT + G", "Move window to gaming workspace", hl.dsp.window.move(
 
 -- Full screen / floating / center.
 o.bind("CTRL + SUPER + ALT + UP", "Full width", hl.dsp.window.fullscreen({ mode = "maximized" }))
-o.bind("CTRL + SUPER + ALT + DOWN", "Toggle floating", hl.dsp.window.float({ action = "toggle" }))
-o.bind("CTRL + SUPER + ALT + DOWN", "Resize window", hl.dsp.exec_cmd("resizeactive exact 60% 75%"))
-o.bind("CTRL + SUPER + ALT + DOWN", "Center window", hl.dsp.exec_cmd("centerwindow"))
+o.bind("CTRL + SUPER + ALT + DOWN", "Float and center window", "~/.config/hypr/float-center.sh")
 
 -- Screenshot.
 o.bind("SUPER + SHIFT + S", "Screenshot to clipboard", "grim -g \"$(slurp)\" - | wl-copy")
